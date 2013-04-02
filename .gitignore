@@ -1,0 +1,10 @@
+*.pyc
+*~
+*.*~
+*.zip
+*.egg-info
+*.db
+docs/_build
+media/cache/
+static/
+mysite/local_settings.py
