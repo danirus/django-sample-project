@@ -2,12 +2,16 @@
 
 import os
 
-try:
-    from mysite.local_settings import *
-except ImportError:
-    pass
-
-DATABASES['default']['NAME'] = 'test_mysite.db'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'test_mysite.db',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
 
 PRJ_PATH = os.path.abspath(os.path.curdir)
 
