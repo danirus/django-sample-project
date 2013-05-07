@@ -1,6 +1,12 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block content %}
 <H2>Welcome to mysite project!</H2>
-<p>You are visiting the homepage but don't miss the other URLs...</p>
+<p>You are visiting the homepage but don't miss the other URLs...
+  <ul>
+    <li><a href="{% url 'polls:polls-index' %}">Polls</a></li>
+    <li><a href="{% url 'diary:diary' %}">Diary</a></li>
+  </ul>
+</p>
 {% endblock %}

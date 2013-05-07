@@ -5,7 +5,16 @@ import os
 try:
     from mysite.local_settings import *
 except ImportError:
-    pass
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'sample_project.db',
+            'USER': '',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
+        }
+    }
 
 PRJ_PATH = os.path.abspath(os.path.curdir)
 
@@ -119,7 +128,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'polls',
-    'django_coverage',
+    'sample_app',
 )
 
 # A sample logging configuration. The only tangible logging
