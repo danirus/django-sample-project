@@ -19,7 +19,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^polls/', include('polls.urls', namespace='polls')),
-    url(r'^diary/', include('sample_app.urls')),
+    url(r'^diary/', include('sample_app.urls', namespace='diary')),
     url(r'^admin/', include(admin.site.urls)),
 )
 
