@@ -125,7 +125,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'polls',
-    'django_coverage',
 )
 
 # A sample logging configuration. The only tangible logging
